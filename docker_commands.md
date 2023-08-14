@@ -26,4 +26,10 @@ purpose of the "-it" flag : in reality the it flag is two flags -i and -t , -i h
 
 - docker run -it <container-id> sh : will start up the shell  immediately but will prevent other commands from executing in this container.
 
-- 
+- Dockerfile : 
+Below listed instructions are basic for docker
+ 
+Instruction telling Docker server what to do | Argument to the instruction 
+```FROM```| alpine
+```RUN``` | apk add --update redis
+```CMD``` | ["redis-server"]
