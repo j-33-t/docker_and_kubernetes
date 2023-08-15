@@ -26,7 +26,7 @@ purpose of the "-it" flag : in reality the it flag is two flags -i and -t , -i h
 
 - docker run -it <container-id> sh : will start up the shell  immediately but will prevent other commands from executing in this container.
 
-- docker build . : command to build a docker image and deploy the container.
+- docker build . : command to build a docker image and deploy the container. The "." refers to the current directory
 
 - Dockerfile : 
 Below listed instructions are basic for docker
@@ -43,4 +43,13 @@ Whats a Base Image ?
 Tagging an image
 - docker build -t <docker-id>/<repo/project name>:<version> : example -t stepgengrider/redis:latest
 
- 
+- COPY <Path to folder> <place to copy stuff to inside *the container*> : Example Copy ./ ./
+specifying working directory to copy the files : WORKDIR /usr/app 
+
+- docker run with port mapping
+
+docker run -p 8080 : 8080 <image-name> 
+	    
+first 8080 is the route incoming requests to this port on local host 
+second 8080 is the port inside the conatiner
+the first and second port are not required to be identical
