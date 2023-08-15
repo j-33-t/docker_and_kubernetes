@@ -53,3 +53,16 @@ docker run -p 8080 : 8080 <image-name>
 first 8080 is the route incoming requests to this port on local host 
 second 8080 is the port inside the conatiner
 the first and second port are not required to be identical
+
+
+- Connecting containers using docker compose
+```docker-compose up```
+
+The following command used to rebuild the conatiner
+```docker-compose up--build``` 
+
+Docker compose :
+It is a separate CLI that gets installed along with Docker
+Used to start up multiple Docker containers at the same time
+
+- when docker compose is used to setup different containers by default they are setup to communicate with each other now
