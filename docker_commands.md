@@ -66,3 +66,16 @@ It is a separate CLI that gets installed along with Docker
 Used to start up multiple Docker containers at the same time
 
 - when docker compose is used to setup different containers by default they are setup to communicate with each other now
+
+to start the docker using docker-compose.yml
+- ```docker-compose up - d```
+
+to stop all the containers from the yml file
+- ```docker-compose down```
+
+
+Restart Policies 
+- NO : Never attempt to restart this . container if it stops or crashes
+- always : if this container stops *for any reason* always attempt to restart it
+- on-failure: only restart if the container stops with an error code
+- unless-stopped: always restart unless we (the developers) forcibly stop it
