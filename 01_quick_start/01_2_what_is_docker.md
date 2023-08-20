@@ -53,4 +53,5 @@ classDiagram
 - Docker does not use traditional virtualization to run containers on macOS. On macOS, Docker uses a component called Docker Desktop to enable containerization. 
 
 - Docker Desktop for macOS uses a translation layer called "xhyve" (a lightweight virtualization solution) to enable Linux containers to run on macOS. 
+
 - This allows containers to interact with macOS file systems, networking, and other resources seamlessly
