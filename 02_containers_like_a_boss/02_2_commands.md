@@ -6,3 +6,5 @@
 
 ```docker <Management command><sub-command>(options)```
 
+useful command 
+```docker <Management command><sub-command> --help```
