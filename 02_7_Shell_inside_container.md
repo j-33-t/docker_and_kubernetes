@@ -27,3 +27,5 @@ There is no need for SSH for container to access shell inside container
 ```docker container exec -it mynginx bash```
 docker exec command is used to run a command inside a running container. It allows you to interact with a container that's already running, without the need to start a new shell session in the container. 
 
+#### List all images
+```docker images ls```
